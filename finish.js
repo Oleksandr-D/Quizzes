@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
    const quizResultsContainer = document.getElementById('quizResults');
    const table = document.createElement('table');
 
-   const tableHeaders = ['Quiz', 'Total Questions', 'Correct Answers', 'Incorrect Answers'];
+   const tableHeaders = ['Назва вікторини', 'Всього питань', 'Правельні відпові', 'Неправильні відповіді'];
    const tableHeaderRow = document.createElement('tr');
    tableHeaders.forEach(headerText => {
       const th = document.createElement('th');
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const quiz = quizzes[quizIndex];
       const history = JSON.parse(localStorage.getItem(historyKey)) || [];
 
-      const quizResult = history[history.length - 1]; // Останній результат з історії
+      const quizResult = history[history.length - 1];
 
       const quizRow = document.createElement('tr');
       quizRow.appendChild(createCell(quiz.title));

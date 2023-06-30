@@ -1,0 +1,272 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+li {
+   list-style-type: none;
+}
+
+html,
+body {
+   height: 100%;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   min-height: 100vh;
+   font-family: Arial, sans-serif;
+   background: linear-gradient(135deg, #FFD700, #FFA500, #FF6347);
+   font-family: 'Trebuchet MS', sans-serif;
+}
+
+header {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+main {
+   flex-grow: 1;
+   background: linear-gradient(135deg, #ffef94, #ffbd43, #ff6d53);
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+   font-size: 36px;
+   margin: 50px 0;
+}
+
+h2 {
+   font-size: 28px;
+   margin: 10px 0 50px;
+}
+
+h3 {
+   font-size: 26px;
+   margin: 10px 0 30px;
+}
+
+nav {
+   font-size: 24px;
+   background-color: rgba(255, 255, 255, 0.8);
+   padding: 10px;
+   border-radius: 5px;
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+}
+
+nav ul li {
+   margin: 0 10px;
+}
+
+nav ul li a {
+   color: #ff8458;
+   text-decoration: none;
+   padding: 5px;
+   transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+   color: #ff2701;
+}
+
+#homePage h2 {
+   text-align: center;
+}
+
+#luckyButton {
+   display: block;
+   margin: 20px auto;
+   padding: 10px 20px;
+   background-color: #337ab7;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+#quizList {
+   list-style-type: none;
+}
+
+#quizList li {
+   padding: 10px;
+   border-bottom: 1px solid #eee;
+}
+
+#quizList li:last-child {
+   border-bottom: none;
+}
+
+#quizList li a {
+   color: #333;
+   text-decoration: none;
+   display: block;
+   font-size: 32px;
+}
+
+#quizList li:hover {
+   background-color: #ff6d535a;
+   border-radius: 5px;
+}
+
+.question-count {
+   font-size: 18px;
+}
+
+footer {
+   height: 100px;
+   margin-top: 50px;
+   text-align: center;
+}
+
+footer p {
+   padding: 10px;
+}
+
+.play-page {
+   background: linear-gradient(135deg, #ffef94, #ffbd43, #ff6d53);
+   padding: 20px;
+   border-radius: 5px;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.play-page h2 {
+   text-align: center;
+   color: #ff4d4d;
+   margin-bottom: 20px;
+}
+
+li {
+   margin-bottom: 20px;
+   font-size: 24px;
+}
+
+ul li {
+   position: relative;
+   padding-left: 50px;
+   margin-bottom: 30px;
+}
+
+ul li input[type="radio"] {
+   position: absolute;
+   font-size: 24px;
+   height: 30px;
+   width: 30px;
+   top: 0;
+   left: 0;
+   cursor: pointer;
+}
+
+.button {
+   display: inline-block;
+   padding: 10px 20px;
+   background-color: #ff8458;
+   color: #fff;
+   border: none;
+   border-radius: 5px;
+   font-size: 16px;
+   margin-bottom: 20px;
+   cursor: pointer;
+}
+
+.button:hover {
+   background-color: #ff2701;
+}
+
+.button:focus {
+   outline: none;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 50px;
+}
+
+#quizResults th,
+#quizResults td {
+   padding: 10px;
+   text-align: center;
+   border-bottom: 1px solid #ddd;
+}
+
+#quizResults th {
+   font-size: 22px;
+   font-weight: bold;
+}
+
+#quizResults tr:last-child td {
+   border-bottom: none;
+}
+
+td ul li {
+   font-size: 14px;
+   padding-left: 0;
+   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+   header {
+      margin-bottom: 10px;
+   }
+
+   nav ul {
+      width: 100%;
+   }
+
+   ul li {
+      position: relative;
+      padding-left: 50px;
+      margin-bottom: 30px;
+   }
+}
+
+@media screen and (max-width: 545px) {
+   main {
+      padding: 0;
+   }
+
+   h2 {
+      font-size: 18px;
+      text-align: center;
+   }
+
+   nav {
+      font-size: 18px;
+   }
+
+   nav ul li {
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+   }
+
+   td ul li {
+      font-size: 10px;
+      padding-left: 0;
+      margin-bottom: 10px;
+   }
+
+   #luckyButton {
+      font-size: 14px;
+   }
+
+   #quizList li a {
+      font-size: 24px;
+   }
+
+   #quizResults th,
+   #quizResults td {
+      font-size: 10px;
+      padding: 0px;
+   }
+}
